@@ -1,5 +1,6 @@
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
+import Profile from '~/pages/Profile';
 import { DefaultLayout } from '~/components/Layout';
 
 const publicRoutes = [
@@ -13,6 +14,11 @@ const publicRoutes = [
         component: Following,
         layout: null
     },
+    {
+        path: '/:nickname',
+        component: Profile,
+        layout: DefaultLayout,
+    }
     // Add more routes here...
 ];
 
