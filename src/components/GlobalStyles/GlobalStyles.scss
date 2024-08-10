@@ -5,6 +5,7 @@
     --black: #000;
     --white: #fff;
     --text-color: #333;
+    --font-family: var(--font-family);
 
     // Default Layout
     --default-layout-header-height: 60px;
@@ -23,11 +24,28 @@ html {
 }
 
 body {
-    font-family: 'TikTokFont', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+    overflow-y: overlay;
+}
+
+// Scrollbar css
+html *::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 0;
+}
+
+html *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 4px;
+}
+
+html *::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0;
 }
 
 button,

@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/router';
 // eslint-disable-next-line no-unused-vars
-import { DefaultLayout } from '~/components/Layout';
+import DefaultLayout from '~/layouts';
 
 function App() {
     return (
