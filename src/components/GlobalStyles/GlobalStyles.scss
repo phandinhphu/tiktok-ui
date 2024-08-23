@@ -20,6 +20,7 @@
 }
 
 html {
+    overflow-y: hidden;
     font-size: 62.5%;
 }
 
@@ -55,7 +56,7 @@ input,
     outline: none;
 }
 
-a[href] {
+a {
     color: var(--text-color);
     text-decoration: none;
 }

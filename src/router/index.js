@@ -2,28 +2,31 @@
 import config from '~/config';
 
 // Laouts
-import DefaultLayout from '~/layouts';
+import { HeaderOnly } from '~/layouts';
 
 // Pages
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
 import Profile from '~/pages/Profile';
+import Login from '~/pages/Login';
 
 const publicRoutes = [
     {
         path: config.routes.home,
         component: Home,
-        layout: DefaultLayout,
     },
     {
-        path: config.routes.follwing,
+        path: config.routes.following,
         component: Following,
-        layout: null,
     },
     {
         path: config.routes.profile,
         component: Profile,
-        layout: DefaultLayout,
+    },
+    {
+        path: config.routes.login,
+        component: Login,
+        layout: HeaderOnly,
     },
     // Add more routes here...
 ];

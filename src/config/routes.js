@@ -1,7 +1,8 @@
 const routes = {
     home: '/',
-    follwing: '/follwing',
+    following: '/following',
     profile: '/:username',
-}
+    login: '/login',
+};
 
-export default routes
+export default routes;

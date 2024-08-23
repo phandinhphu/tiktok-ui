@@ -1,0 +1,64 @@
+.wrapper {
+    border-top: 1px solid #e3e3e4;
+    margin-bottom: 8px;
+}
+
+.label {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f9f9f9;
+    }
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-size: 1.6rem;
+    color: #161823;
+    line-height: 1;
+}
+
+.check-icon {
+    margin-left: 6px;
+    font-size: 1.4rem;
+    color: #20d5ec;
+}
+
+.username {
+    font-size: 1.2rem;
+    opacity: #161823bf;
+}
+
+.see-all {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fe2c55;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1048px) {
+    .wrapper {
+        // display: none;
+    }
+}

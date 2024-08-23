@@ -5,7 +5,7 @@
     --search-button-width: 52px;
 
     position: fixed;
-    z-index: 1000;
+    z-index: 99999;
     top: 0;
     left: 0;
     display: flex;
@@ -77,4 +77,10 @@
     padding: 4px 8px;
     background-color: transparent;    
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .inner {
+        width: 100%;
+    }
 }

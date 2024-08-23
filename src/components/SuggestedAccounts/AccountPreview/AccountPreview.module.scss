@@ -1,0 +1,63 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    margin-top: 12px;
+    color: #161823;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.check-icon {
+    margin-left: 8px;
+    color: rgb(32, 213, 236);
+}
+
+.username {
+    font-size: 1.6rem;
+}
+
+.analytics {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.value {
+    margin-right: 4px;
+}
+
+.value ~ .value {
+    margin-left: 20px;
+}
+
+.label {
+    color: #161823bf;
+}
+
+.desc {
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    color: #161823;
+    line-height: 18px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}

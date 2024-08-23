@@ -1,0 +1,40 @@
+.wrapper {
+    padding: 32px 24px 36px;
+    height: 100vh;
+    overflow-y: overlay;
+}
+
+.tabs {
+    position: relative;
+    display: flex;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+    .tab {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 24px;
+        height: 44px;
+        padding: 0px 32px;
+        color: rgb(115, 116, 123);
+        text-align: center;
+        cursor: pointer;
+
+        &.active {
+            color: rgb(22, 24, 35);
+        }
+    }
+}
+
+.line {
+    position: absolute;
+    height: 2px;
+    background: rgb(22, 24, 35);
+    bottom: 0px;
+    transition: transform 0.3s;
+}
